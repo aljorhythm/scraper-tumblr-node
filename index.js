@@ -124,7 +124,7 @@ function downloadTumblrPage(tumblr, i){
 
 function downloadTumblr(tumblr, from, to){
     var tumblrPages = [];
-    for(i = 1; i <= to; i++){
+    for(i = from; i <= to; i++){
         tumblrPages.push(i)
     }
     return tumblrPages.reduce(function (previous, tumblrPage) {
